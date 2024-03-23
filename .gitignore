@@ -5,3 +5,12 @@
 ### not ignore ###
 !/README.md
 !.gitignore
+
+!/setup.sh
+!/ssh_config
+!/tmux.conf
+!/gitconfig
+!/nvim.lua
+!/fish
+!/vscode
+
