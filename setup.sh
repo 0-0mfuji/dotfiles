@@ -1,15 +1,21 @@
 #!/bin/bash
-echo $(dirname "$0")
+cd $(dirname "$0")
 DOTFILES_DIR=$(pwd)
 
 main() {
-    echo "Installing packages..."
-    if [ "$(uname)" = "Darwin" ]; then
-        darwin
-    fi
-
-    if [ "$(uname)" = "Linux" ]; then
-        linux
+    read -n1 -p "Installing packages? (y/N): " yn
+    if [[ $yn = [yY] ]]; then
+        echo "Installing packages..."
+        echo "Chacking OS..."
+        if [ "$(uname)" = "Darwin" ]; then
+            echo "Starting Darwin proces...."
+            darwin
+        fi
+        if [ "$(uname)" = "Linux" ]; then
+            echo "Starting Linux proces...."
+            linux
+        fi
+        echo "Installing Rust..."
     fi
 
     echo "Linking config files..."
@@ -25,7 +31,6 @@ main() {
     mkdir -p ~/.config/fish/conf.d
     ln -s $DOTFILES_DIR/fish/alias.fish  ~/.config/fish/conf.d/alias.fish
 
-    echo "Installing Rust..."
 }
 
 darwin() {
@@ -37,4 +42,4 @@ linux() {
 WSL() {
 }
 
-
+main
