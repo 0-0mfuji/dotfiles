@@ -15,6 +15,8 @@ main() {
             linux
         fi
     echo "Installing Rust..."
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+    source $HOME/.cargo/env
 
     echo "Linking config files..."
     ln -s $DOTFILES_DIR/gitconfig        ~/.gitconfig
@@ -25,18 +27,6 @@ main() {
 
     mkdir -p ~/.config/nvim
     ln -s $DOTFILES_DIR/nvim.lua         ~/.config/nvim/init.lua
-
-    read -n1 -p "Set fish? (y/N): " yn
-    if [[ $yn = [yY] ]]; then
-        echo "Setting shell..."
-        if [ "$(which fish)" = "$(tail -n 1 /etc/shells)" ]; then
-            echo $(which fish) >> /etc/shells
-            chsh -s $(which fish)
-        fi
-    fi
-
-    mkdir -p ~/.config/fish/conf.d
-    ln -s $DOTFILES_DIR/fish/alias.fish  ~/.config/fish/conf.d/alias.fish
 }
 
 macos() {
