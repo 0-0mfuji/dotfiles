@@ -4,10 +4,8 @@ cd $(dirname "$0")
 DOTFILES_DIR=$(pwd)
 
 main() {
-    read -n1 -p "Installing packages? (y/N): " yn
-    if [[ $yn = [yY] ]]; then
-        echo "Installing packages..."
-        echo "Chacking OS..."
+    echo "Installing packages..."
+    echo "Chacking OS..."
         if [ "$(uname)" = "Darwin" ]; then
             echo "Starting Darwin proces...."
             macos
@@ -16,8 +14,7 @@ main() {
             echo "Starting Linux proces...."
             linux
         fi
-        echo "Installing Rust..."
-    fi
+    echo "Installing Rust..."
 
     echo "Linking config files..."
     ln -s $DOTFILES_DIR/gitconfig        ~/.gitconfig
