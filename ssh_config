@@ -1,6 +1,7 @@
-Host gh
+Host Github
   HostName github.com
   User git
 
 Host *
   IdentityFile ~/.ssh/key
+  ForwardAgent yes
