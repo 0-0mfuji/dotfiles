@@ -18,5 +18,5 @@ alias ll='ls -a -l -h -p'
 alias sh_reboot='exec $SHELL -l'
 
 #Setting_dotfile
-alias dotfile='git -C ~/dotfile/ pull &&code ~/dotfiles/'
+alias dotfile='git -C ~/dotfiles/ pull && code ~/dotfiles/'
 alias memo='git -C ~/work/memo/ pull && code ~/work/memo/'
