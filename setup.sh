@@ -35,19 +35,55 @@ macos() {
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
     brew install \
-        neovim fish coreutils findutils binutils inetutils tmux xz gnu-tar gnupg2 wget jq \
-        git mercurial subversion python ruby node npm yarn nmap tig \
-        htop pstree llvm qemu autoconf autogen automake cmake watch sloc \
-        ripgrep fd tokei
+        neovim \        #editer
+        fish \          #shell
+        coreutils \     #GNU Core Utilities
+        findutils \     #GNU The Basic Directory Searching Utilities
+        binutils \      #GNU Collection Of Binary Tools
+        inetutils \     #GNU network utilities
+        tmux \          #terminal multiplexer
+        xz \            #general-purpose data compression tool
+        gnu-tar \       #manipulate tape archives
+        gnupg2 \        #OpenPGP encryption and signing tool
+        wget \          #The non-interactive network downloader
+        jq \            #Command-line JSON processor
+        git \           #git
+        mercurial \     #バージョン管理ツール like git
+        subversion \    #open source version control system
+        python \
+        ruby \
+        node \
+        npm \
+        yarn \
+        nmap \          #Port scanning utility for large networks
+        tig \           #Text interface for Git repositories
+        htop \          #interactive process viewer
+        pstree \        #process tree
+        llvm \
+        qemu \
+        autoconf \
+        autogen \
+        automake \
+        cmake \
+        watch \
+        sloc \          #Simple tool to count source lines of code
+        ripgrep \
+        fd \
+        tokei
 
     brew install --cask \
-        google-chrome firefox
+        google-chrome \
+        firefox
 
     brew install --cask \
-        visual-studio-code iterm2
-    brew install --cask \
-        dockerbrew blender
+        visual-studio-code \
+        iterm2
 
+    brew install --cask \
+        dockerbrew \
+        blender \
+        rewind \
+        imhex
 }
 
 linux() {
