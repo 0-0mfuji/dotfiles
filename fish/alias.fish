@@ -13,6 +13,8 @@ alias gf='git fetch'
 
 # Cmd
 alias ll='ls -a -l -h -p'
+alias tx='tmux a'
+alias tn='tmux new -s'
 
 #Reboot shell
 alias sh_reboot='exec $SHELL -l'
