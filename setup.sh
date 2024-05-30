@@ -21,12 +21,15 @@ main() {
     echo "Linking config files..."
     ln -s $DOTFILES_DIR/gitconfig        ~/.gitconfig
     ln -s $DOTFILES_DIR/tmux.conf        ~/.tmux.conf
+    tmux source ~/.tmux.conf
 
     mkdir -p ~/.ssh
     ln -s $DOTFILES_DIR/ssh_config       ~/.ssh/config
 
     mkdir -p ~/.config/nvim
     ln -s $DOTFILES_DIR/nvim.lua         ~/.config/nvim/init.lua
+    sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 }
 
 macos() {
@@ -84,10 +87,6 @@ macos() {
     blender \       # 3D creation suite (3D作成スイート)
     rewind \        # Screen recording tool (画面録画ツール)
     imhex           # Hex editor for reverse engineering (リバースエンジニアリング用の16進エディタ)
-
-    
-
-    
 }
 
 linux() {
