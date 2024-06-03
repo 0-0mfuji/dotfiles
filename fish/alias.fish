@@ -15,7 +15,7 @@ alias gf='git fetch'
 alias ll='ls -a -l -h -p'
 alias tx='tmux a'
 alias tn='tmux new -s'
-alias tt="~/.dotfile/"
+alias tt="bash ~/dotfiles/tmux_tpl.sh"
 
 #Reboot shell
 alias sh_reboot='exec $SHELL -l'
