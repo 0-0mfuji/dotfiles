@@ -15,3 +15,5 @@
 !/vscode
 !/Docker
 !/colorset.itermcolors
+!/tmux_tpl.sh
+!/setup_fish.sh
