@@ -9,13 +9,13 @@ if [ "$#" -eq 0 ]; then
   tmux select-pane -t 1
 else
   case $1 in
-    1)
+    n)
       tmux split-window -v
       tmux resize-pane -D 15
       tmux select-pane -D
       clear
       ;;
-    2)
+    ng)
       tmux split-window -h
       tmux split-window -v
       tmux resize-pane -D 15
@@ -24,8 +24,8 @@ else
       tmux select-pane -t 1
       clear
       ;;
-    py)
-      cd ~/Desktop/python
+    -d)
+      cd $2
       tmux split-window -v
       tmux split-window -h
       tmux resize-pane -D 15
