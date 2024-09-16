@@ -10,6 +10,7 @@ alias ga='git add -A'
 alias gc='git commit --verbose'
 alias gp='git push'
 alias gf='git fetch'
+alias gcash='git rm -r --cached .'
 
 # Cmd
 alias ll='ls -a -l -h -p'
