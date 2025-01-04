@@ -16,6 +16,9 @@ fish()
 
     mkdir -p ~/.config/fish/conf.d
     ln -s $DOTFILES_DIR/fish/alias.fish  ~/.config/fish/conf.d/alias.fish
+    ln -s $DOTFILES_DIR/fish/path.fish ~/.config/fish/conf.d/path.fish
+    ln -s $DOTFILES_DIR/fish/rustup.fish ~/.config/fish/conf.d/rustup.fish
+
 }
 
 fish
