@@ -127,7 +127,8 @@ macos() {
     brew install --cask dockerbrew
     echo "dockerbrew: Docker container platform Dockerコンテナプラットフォーム"
     brew install --cask blender
-    echo "blender: 3D creation suite 3D作成スイート"
+    brew install --cask freecad
+    echo "blender: 3D creation 3D制作ソフト"
     brew install --cask rewind
     echo "rewind: Screen recording tool 画面録画ツール"
     brew install --cask imhex
