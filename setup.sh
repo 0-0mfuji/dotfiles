@@ -133,6 +133,11 @@ macos() {
     echo "rewind: Screen recording tool 画面録画ツール"
     brew install --cask imhex
     echo "imhex: Hex editor for reverse engineering リバースエンジニアリング用の16進エディタ"
+
+    echo "gpg pinentry-mac: PGP　PGP暗号の作成"
+    brew install gpg pinentry-mac
+    echo "pinentry-program $(which pinentry-mac)" >> .gnupg/gpg-agent.conf
+
 }
 
 linux() {
