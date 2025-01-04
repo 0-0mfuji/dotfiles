@@ -5,3 +5,7 @@ Host Github
 Host *
   IdentityFile ~/.ssh/key
   ForwardAgent yes
+
+Host github.com
+  IdentityFile ~/.ssh/kagi
+  User git
