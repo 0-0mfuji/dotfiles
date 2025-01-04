@@ -75,18 +75,18 @@ macos() {
     tokei           # Code statistics tool (コード統計ツール)
 
 	brew install --cask \
-    google-chrome \ # Web browser (ウェブブラウザ)
-    firefox         # Web browser (ウェブブラウザ)
+    google-chrome \ # Web browser ウェブブラウザ
+    firefox         # Web browser ウェブブラウザ
 
 	brew install --cask \
-    visual-studio-code \ # Code editor (コードエディタ)
-    iterm2              # Terminal emulator (ターミナルエミュレータ)
+    visual-studio-code \ # Code editor コードエディタ
+    iterm2              # Terminal emulator ターミナルエミュレータ
 
 	brew install --cask \
-    dockerbrew \    # Docker container platform (Dockerコンテナプラットフォーム)
-    blender \       # 3D creation suite (3D作成スイート)
-    rewind \        # Screen recording tool (画面録画ツール)
-    imhex           # Hex editor for reverse engineering (リバースエンジニアリング用の16進エディタ)
+    dockerbrew \    # Docker container platform Dockerコンテナプラットフォーム
+    blender \       # 3D creation suite 3D作成スイート
+    rewind \        # Screen recording tool 画面録画ツール
+    imhex           # Hex editor for reverse engineering リバースエンジニアリング用の16進エディタ
 }
 
 linux() {
