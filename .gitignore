@@ -17,3 +17,4 @@
 !/colorset.itermcolors
 !/tmux_tpl.sh
 !/setup_fish.sh
+!/setup_github_ssh.sh
