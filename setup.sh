@@ -124,15 +124,18 @@ macos() {
     echo "visual-studio-code: Code editor コードエディタ"
     brew install --cask iterm2
     echo "iterm2: Terminal emulator ターミナルエミュレータ"
-    brew install --cask dockerbrew
-    echo "dockerbrew: Docker container platform Dockerコンテナプラットフォーム"
-    brew install --cask blender
-    brew install --cask freecad
-    echo "blender: 3D creation 3D制作ソフト"
-    brew install --cask rewind
-    echo "rewind: Screen recording tool 画面録画ツール"
+    # brew install --cask dockerbrew
+    # echo "dockerbrew: Docker container platform Dockerコンテナプラットフォーム"
+    # brew install --cask blender
+    # brew install --cask freecad
+    # echo "blender: 3D creation 3D制作ソフト"
+    # brew install --cask rewind
+    # echo "rewind: Screen recording tool 画面録画ツール"
     brew install --cask imhex
     echo "imhex: Hex editor for reverse engineering リバースエンジニアリング用の16進エディタ"
+    brew install --cask obsidian
+    echo "obsidian: Knowledge base that works on top of a local folder of plain text Markdown files マークダウン　ナレッジデータベース"
+
 
     echo "gpg pinentry-mac: PGP　PGP暗号の作成"
     brew install gpg pinentry-mac
