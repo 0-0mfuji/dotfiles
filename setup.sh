@@ -135,7 +135,8 @@ macos() {
     echo "imhex: Hex editor for reverse engineering リバースエンジニアリング用の16進エディタ"
     brew install --cask obsidian
     echo "obsidian: Knowledge base that works on top of a local folder of plain text Markdown files マークダウン　ナレッジデータベース"
-
+    brew install --cask tailscale
+    echo "tailscale: Zero config VPN using WireGuard WireGuardベースのゼロコンフィグVPN（セキュアネットワーク構築ツール）"
 
     echo "gpg pinentry-mac: PGP　PGP暗号の作成"
     brew install gpg pinentry-mac
