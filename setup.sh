@@ -123,7 +123,8 @@ macos() {
     brew install --cask visual-studio-code
     echo "visual-studio-code: Code editor コードエディタ"
     brew install --cask iterm2
-    echo "iterm2: Terminal emulator ターミナルエミュレータ"
+    brew install --cask ghostty
+    echo "iterm2 ghostty: Terminal emulator ターミナルエミュレータ"
     # brew install --cask dockerbrew
     # echo "dockerbrew: Docker container platform Dockerコンテナプラットフォーム"
     # brew install --cask blender
