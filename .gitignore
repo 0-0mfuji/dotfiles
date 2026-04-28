@@ -18,3 +18,11 @@
 !/tmux_tpl.sh
 !/setup_fish.sh
 !/setup_github_ssh.sh
+!/setup_dict.sh
+
+!/dict/
+/dict/*
+!/dict/custom_medical_dict.txt
+/dict/*.plist
+/dict/*.txt
+!/dict/custom_medical_dict.txt
