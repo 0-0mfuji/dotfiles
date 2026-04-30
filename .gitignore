@@ -23,6 +23,10 @@
 !/dict/
 /dict/*
 !/dict/custom_medical_dict.txt
-/dict/*.plist
-/dict/*.txt
-!/dict/custom_medical_dict.txt
+# Generated dictionaries
+/dict/google_ime_medical.txt
+/dict/macos_ime_medical.plist
+/dict/ms_ime_medical.txt
+# Source dictionary directories
+/dict/DMiME-1.1/
+/dict/MANBYO_201907/

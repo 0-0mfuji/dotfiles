@@ -139,6 +139,9 @@ macos() {
     brew install --cask tailscale
     echo "tailscale: Zero config VPN using WireGuard WireGuardベースのゼロコンフィグVPN（セキュアネットワーク構築ツール）"
 
+    brew install --cask google-japanese-ime
+    echo "google-japanese-ime: Google Japanese Input (Google 日本語入力)"
+
     echo "gpg pinentry-mac: PGP　PGP暗号の作成"
     brew install gpg pinentry-mac
     echo "pinentry-program $(which pinentry-mac)" >> .gnupg/gpg-agent.conf
