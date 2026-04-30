@@ -122,6 +122,8 @@ macos() {
     echo "firefox: Web browser (ウェブブラウザ)"
     brew install --cask visual-studio-code
     echo "visual-studio-code: Code editor コードエディタ"
+    brew install --cask zed
+    echo "zed: Code editor コードエディタ"
     brew install --cask iterm2
     brew install --cask ghostty
     echo "iterm2 ghostty: Terminal emulator ターミナルエミュレータ"
