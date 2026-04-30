@@ -19,6 +19,7 @@
 !/setup_fish.sh
 !/setup_github_ssh.sh
 !/setup_dict.sh
+!/setup_flutter.sh
 
 !/dict/
 /dict/*
