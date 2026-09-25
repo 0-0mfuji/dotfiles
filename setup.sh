@@ -24,6 +24,8 @@ main() {
     echo "Linked ~/.gitconfig"
     ln -s $DOTFILES_DIR/tmux.conf ~/.tmux.conf
     echo "Linked ~/.tmux.conf"
+    ln -s $DOTFILES_DIR/bash_profile ~/.bash_profile
+    echo "Linked ~/.bash_profile"
     tmux source ~/.tmux.conf
     echo "Reloaded tmux configuration"
 

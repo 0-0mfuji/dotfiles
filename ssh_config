@@ -8,7 +8,6 @@ Host Github
   User git
 
 Host *
-  IdentityFile ~/.ssh/key
   ForwardAgent yes
 
 Host github.com

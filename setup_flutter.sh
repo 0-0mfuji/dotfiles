@@ -168,6 +168,13 @@ main() {
     fi
 
     log_success "Flutter のセットアップが完了しました！"
+
+    if [ "$use_fvm" = true ]; then
+        log_info "Shell の PATH 設定を確認してください。"
+        echo "Fish shell を使用している場合、'fish/path.fish' に以下の設定を追加済みです："
+        echo "  fish_add_path \$HOME/.fvm/default/bin"
+        echo "これにより、'fvm flutter' ではなく 'flutter' コマンドで FVM のグローバル版を使用できます。"
+    fi
 }
 
 main "$@"
